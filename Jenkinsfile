@@ -1,6 +1,6 @@
 node {
     // Declare agent and turn arg into inside
-    docker.image('maven:3.8.5-eclipse-temurin-8-alpine').inside('-v /root/.m2:/root/.m2') {
+    docker.image('maven:3.9.3').inside('-v /root/.m2:/root/.m2') {
         // Build
         stage('Build') {
             checkout scm
